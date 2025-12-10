@@ -1,0 +1,101 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("/img/bg/ug-wallpaper.jpeg"); /* Pastikan path gambar ini benar */
+
+  /* MENGATASI BACKGROUND: */
+  background-size: cover !important; /* Memaksa gambar memenuhi layar */
+  background-repeat: no-repeat !important; /* Mencegah gambar menjadi 2 (mengulang) */
+  background-position: center center !important; /* Posisi di tengah */
+  background-attachment: fixed !important; /* Gambar tetap diam saat discroll */
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: "Righteous", cursive;
+}
+
+.glass-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.glass-container h3,
+.glass-container h4,
+.glass-container label {
+  color: #212529 !important;
+  text-shadow: none;
+}
+
+.link a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: #090808;
+}
+
+.link a:hover .bi-facebook {
+  color: #0e0e10;
+}
+
+.link a:hover .bi-github {
+  color: #0d0d0d;
+}
+
+.link a:hover .bi-instagram {
+  color: #090809;
+}
+
+.link a:hover .bi-twitter {
+  color: #070707;
+}
+
+label {
+  color: #000000;
+}
+.form-group label {
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #000000;
+}
+
+/* style.css - Tambahkan di baris paling bawah */
+
+/* Membungkus area kontrol tabel (Search & Show Entries) dengan warna putih */
+#data_wrapper .row:first-child {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Latar belakang putih transparan */
+  padding: 10px;
+  border-radius: 5px 5px 0 0; /* Melengkung di sudut atas */
+  margin-bottom: 0;
+  border-bottom: 2px solid #333; /* Garis pemisah agar rapi */
+}
+
+/* Memastikan Teks "Show entries" dan "Search" berwarna Hitam Tebal */
+#data_length label,
+#data_filter label {
+  color: #000 !important; /* Warna Hitam Pekat */
+  font-weight: bold !important; /* Tebal */
+  font-size: 16px; /* Ukuran font sedikit lebih besar */
+}
+
+/* Memperjelas Kotak Input Pencarian */
+#data_filter input {
+  border: 2px solid #0d6efd; /* Memberi border biru agar terlihat jelas */
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+}
